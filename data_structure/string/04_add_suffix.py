@@ -13,7 +13,7 @@ my_string = input("enter any string")
 # checks if string length is greater than 3
 if len(my_string) >= 3:
     # condition checking if the string ends with 'ing'
-    if my_string.endswith('ing'):
+    if my_string[-3]=='i' and my_string[-2]=='n' and my_string[-1]=='g':
         my_string = my_string + 'ly'
     else:
         my_string = my_string + 'ing'
