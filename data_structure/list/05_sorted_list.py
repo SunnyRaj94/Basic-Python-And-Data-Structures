@@ -8,8 +8,13 @@ Write a Python program to get a list, sorted in increasing order by the last ele
 each tuple from a given list of non-empty tuples
 """
 #making a sample list as given in question
-sample_List = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
-#returning sorted list through sorted function
-sorted_list = sorted(sample_List,key= lambda x:x[1])
+sample_List = [(2, 5),(1, 2),(4, 4),(2, 3),(2, 1)]
+#returning after sorting the list
+for x_index in range(len(sample_List)):
+    for y_index in range(len(sample_List)):
+        if sample_List[x_index][1]<sample_List[y_index][1]:
+            temp = sample_List[x_index]
+            sample_List[x_index]=sample_List[y_index]
+            sample_List[y_index]=temp
 #printing the sorted list
-print(sorted_list)
+print(sample_List)
