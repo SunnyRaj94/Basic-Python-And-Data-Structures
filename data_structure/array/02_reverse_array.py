@@ -13,10 +13,12 @@ try:
     # making an array of 5 elements
     arr = array.array('i', [1, 2, 3, 4, 5])
     #reversring the array elements
-    arr.reverse()
+    reverse_array =array.array('i',[])
     #printing reversed array
-    for index in range(len(arr)):
-        print("element at : ",index," is ",arr[index])
+    for i in range(len(arr) - 1, -1, -1):
+        reverse_array.append(arr[i])
+    print('Actuacl array : {}'.format(arr))
+    print('Reversed array : {}'.format(reverse_array))
 
 except Exception:
     print("oops something went wrong!!!!")
