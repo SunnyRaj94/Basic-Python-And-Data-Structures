@@ -10,7 +10,7 @@ problem statement:
 my_first_set={"apple", "banana", "cherry","potato","xyz"}
 my_second_set={"apple","banana"}
 #returning intersection of above sets
-intersection_set = my_first_set.intersection(my_second_set)
+intersection_set = my_second_set & my_first_set
 
 #printing the intersection of sets
 print(intersection_set)
