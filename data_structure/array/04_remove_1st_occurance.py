@@ -4,7 +4,7 @@ Created on 13/12/2019
 """
 """
 problem statement:
-Write a Python program to get the number of occurrences of a specified element in an array.   
+Write a Python program to remove the first occurrence of a specified element from an array  
 """
 # importing array module
 import array
@@ -21,8 +21,17 @@ try:
     print("your entered array is :",elements_array)
     #removing the first occurance value in the array
     remove_value = int(input("enter value you want to remove in this array"))
+    #making new array to store array after removal of value
+    new_array = array.array('i',[])
+    #removing the specified value
+    count =0
+    for value in elements_array:
+        if value==remove_value and count==0:
+            count=count+1
+            pass
+        else:
+            new_array.append(value)
     #printing the array after removal
-    elements_array.remove(remove_value)
-    print("array after removal of element is :",elements_array)
+    print("array after removal of element is :",new_array)
 except Exception:
     print("oops something went wrong")
