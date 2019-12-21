@@ -10,7 +10,7 @@ problem statement:
 my_first_set={"apple", "banana", "cherry","potato","xyz"}
 my_second_set={"apple","banana"}
 #returning union of above sets
-union_set = my_first_set.union(my_second_set)
+union_set = my_first_set | my_second_set
 
 #printing the intersection of sets
 print(union_set)
