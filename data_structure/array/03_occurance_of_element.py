@@ -19,8 +19,13 @@ try:
         elements_array.append(int(input("enter value")))
     #counting foa a specific value in the array
     count_value=int(input("enter value you want to count in this array"))
+    #counting the given value
+    count =0
+    for value in elements_array:
+        if value==count_value:
+            count=count+1
     #printing the counted value
-    print("given value is present : ",elements_array.count(count_value)," times in array")
+    print("given value is present : ",count," times in array")
 
 except Exception:
     print("oops something went wrong")
