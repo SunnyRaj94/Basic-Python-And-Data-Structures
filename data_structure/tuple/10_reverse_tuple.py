@@ -4,7 +4,7 @@ Created on 14/12/2019
 """
 """
 problem statement:
-Write a Python program to reverse a tuple
+Write a Python  program to reverse a tuple
 """
 #initializing a tuple with different data types
 my_tuple =(10,'sunny',22.3,True,1+3j,'h')
